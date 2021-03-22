@@ -1,0 +1,1 @@
+{"tests":[{"setup":"","input":"","output":"","comparison":"included","timeout":5,"name":"t1","run":"make t1","points":5},{"setup":"","input":"","output":"","comparison":"included","timeout":5,"name":"t2","run":"make t2","points":5},{"setup":"","input":"","output":"","comparison":"included","timeout":5,"name":"t3","run":"make t3","points":5}]}

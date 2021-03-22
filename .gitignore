@@ -1,0 +1,7 @@
+*.dll
+*.exe
+bin
+obj
+.fake
+.ionide
+.vscode
