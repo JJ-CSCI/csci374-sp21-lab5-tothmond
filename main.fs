@@ -12,12 +12,12 @@ let rec prod (t:Tree) :int =
 
 let rec map (f:int->int) (t:Tree) :Tree =
     match t with
-    |Leaf n -> Leaf (f (n))
-    |Node (n1, n2) -> Node(map f n1, map f n2)
-
-
     
+    |Leaf n -> Leaf (f (n))
+    |Node(n1,n2) -> Node(map f n1, map f n2)
     
 
 let rec foldStr (nf:string -> string -> string) (lf:int->string) (t:Tree) :string =
-    ""
+    match t with
+    |Leaf n -> (lf (n))
+    |Node(n1,n2) -> (nf (foldStr nf lf n1) (foldStr nf lf n2))
